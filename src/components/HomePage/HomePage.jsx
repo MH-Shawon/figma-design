@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Companies from "./Companies";
 import VisionarySec from "./VisionarySec";
 import Categories from "./Category/Categories";
+import Explore from "./Explore";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Schedule />
       <VisionarySec />
       <Categories />
+      <Explore />
     </div>
   );
 };

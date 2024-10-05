@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const Categories = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-8">
       <h5 className="text-center text-[#5E6282] font-poppins font-semibold">
         Category
       </h5>
@@ -10,7 +10,7 @@ const Categories = () => {
         We Offer Best Services
       </h4>
 
-      <div>
+      <div className="px-[100px] h-[570px]">
         <Card />
       </div>
     </div>
