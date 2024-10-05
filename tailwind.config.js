@@ -11,6 +11,7 @@ module.exports = {
         baiJamjuree: ["var(--baiJamjuree-font)", "sans-serif"],
         notoSerifJP: ["var(--notoSerifJP-font)", "serif"],
         poppins: ["var(--poppins-font)", "serif"],
+        volkhov: ["var(--volkhov-font)", "serif"],
       },
     },
   },

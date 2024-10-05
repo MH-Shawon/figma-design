@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 
-import{Bai_Jamjuree, Noto_Serif_JP, Poppins} from "next/font/google"
+import{Bai_Jamjuree, Noto_Serif_JP, Poppins, Volkhov} from "next/font/google"
 import Footer from "@/components/shared/Footer";
 
 // font baiJamjuree 
@@ -24,6 +24,14 @@ const notoSerifJP = Noto_Serif_JP({
 
 const poppins = Poppins({
   weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// font Volkhov
+
+const volkhov = Volkhov({
+  weight: "700",
   subsets: ["latin"],
   display: "swap",
 });
