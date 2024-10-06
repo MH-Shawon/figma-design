@@ -19,7 +19,7 @@ const VisionarySec=()=>{
                         Transitioning into franchise consulting was a seamless shift for me. I saw clear parallels between my previous experiences and my new role, with a focus on helping people make meaningful changes. My knack for understanding concerns, listening attentively, and delivering thoughtful solutions has been the cornerstone of my success in both the mortgage and franchise arenas.
                     </p>
                     <div className="flex gap-2 mt-[35px]">
-                    <button className="btn bg-[#0077B5] py-3 px-6 text-white h-[57px] rounded-lg">LET'S CONNECT ON lINKEDIN</button>
+                    <button className="btn bg-[#0077B5] py-3 px-6 text-white h-[57px] rounded-lg">LET&apos;S CONNECT ON lINKEDIN</button>
                         <FaLinkedinIn className=" h-[56px] w-[56px] text-white bg-[#0077B5] rounded-sm"/>
                     </div>
                 </div>
