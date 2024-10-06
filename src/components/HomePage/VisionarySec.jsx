@@ -3,7 +3,7 @@ import {  FaLinkedinIn } from "react-icons/fa";
 
 const VisionarySec=()=>{
     return(
-        <div className="h-[575px]">
+        <div className="h-[575px] mt-16">
             <div className="flex-col w-full gap-0 hero-content lg:flex-row">
                 <div className="w-1/3 ">
                     <div className=" relative bg-primary w-[339px] h-[550px] ">

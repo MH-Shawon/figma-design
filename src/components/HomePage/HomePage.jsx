@@ -6,6 +6,8 @@ import Categories from "./Category/Categories";
 import Explore from "./Explore";
 import FaqSection from "./FaqSection";
 import MessageSec from "./MessageSec";
+import Testimony from "./Testimony";
+import SubscribeSection from "./SubscribeSection";
 
 const HomePage = () => {
   return (
@@ -16,8 +18,10 @@ const HomePage = () => {
       <VisionarySec />
       <Categories />
       <Explore />
+      <Testimony />
       <FaqSection />
       <MessageSec />
+      <SubscribeSection />
     </div>
   );
 };
