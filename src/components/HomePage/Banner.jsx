@@ -1,72 +1,33 @@
 const Banner = () => {
   return (
-    <div className="w-full text-white border border-red-300 bg-base-300">
-      <div className="carousel">
-        {banners.map((banner, index) => (
-          <div
-            style={{
-              backgroundImage: ` url(/assets/images/banner.png)`,
-            }}
-            key={index}
-            id={`slide${index + 1}`}
-            className="carousel-item relative w-[970px] bg-right  bg-no-repeat h-[670px] rounded-xl"
-          >
-                <div className=" h-[570px] w-[460px] pl-10 mr-10  mt-[180px]">
-              <div className="space-y-6  bg-[rgba(255,255,255,0.90)]">
-                        <h1 className="text-5xl font-notoSerifJP text-[#6C6C6C] tracking-[-1.47px]">
-                            {banner.title}
-                </h1>
-                        <p className="font-baiJamjuree text-[20px] text-[#5F5F64]">{banner.description}
-                </p>
-                <button className="btn-sm btn btn-primary">
-                  Book Your Free 1:1 Consultation
-                </button>
-              </div>
-            </div>
-            <div className="absolute flex justify-between transform bottom-12 right-12">
-              <a href={banner.prev} className="mr-6 btn btn-circle">
-                ❮
-              </a>
-              <a href={banner.next} className="btn btn-circle">
-                ❯
-              </a>
-            </div>
+    <div>
+      <div className="relative flex items-center justify-center bg-[#FFF]">
+        {/* Background Image */}
+        <div
+          className="absolute top-0 right-32 w-[873px] h-[476px] bg-cover bg-no-repeat bg-[#d3d3d3] flex-shrink-0"
+          style={{ backgroundImage: "url('/assets/images/banner.png')" }}
+        ></div>
+
+        {/* Content */}
+        <div className="relative right-[440px] space-x-8 mt-20">
+          {/* Text Section */}
+          <div className="w-[400px]  p-10 bg-white shadow-lg bg-opacity-90">
+            <h1 className="text-4xl font-bold text-[#6C6C6C] font-notoSerifJP tracking-[-1.47px] ">
+              <span className="text-primary">Franchise</span> Growth <br /> and
+              Support Services
+            </h1>
+            <p className="mt-4 font-baiJamjuree text-[#5F5F64]">
+              Franchise Growth and Support Services provides comprehensive
+              assistance for aspiring and established franchise owners.
+            </p>
+            <button className="px-6 py-2 mt-6 text-white rounded-lg shadow-md bg-primary hover:bg-primary">
+              Book Your Free 1 Consultation
+            </button>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
 };
-
-const banners = [
-  {
-        title: "Franchise Growth and Support Services",
-    description:
-      "Franchise Growth and Support Services provides comprehensive assistance for aspiring and established franchise owners.",
-    next: "#slide2",
-    prev: "#slide4",
-  },
-//   {
-//       title: "Franchise Growth and Support Services",
-//       description:
-//           "Franchise Growth and Support Services provides comprehensive assistance for aspiring and established franchise owners.",
-//     next: "#slide3",
-//     prev: "#slide1",
-//   },
-//   {
-//       title: "Franchise Growth and Support Services",
-//       description:
-//           "Franchise Growth and Support Services provides comprehensive assistance for aspiring and established franchise owners.",
-//     next: "#slide4",
-//     prev: "#slide2",
-//   },
-//   {
-//       title: "Franchise Growth and Support Services",
-//       description:
-//           "Franchise Growth and Support Services provides comprehensive assistance for aspiring and established franchise owners.",
-//     next: "#slide1",
-//     prev: "#slide3",
-//   },
-];
 
 export default Banner;

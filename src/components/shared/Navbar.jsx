@@ -72,7 +72,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-                  <a className="text-[26px] font-notoSerifJP text-[#515151]"><span className="text-primary">Franchies</span>Expert</a>
+          <a className="text-[26px] font-notoSerifJP text-[#515151] tracking-[-0.78px] font-bold"><span className="text-primary">Franchies</span>Expert</a>
         </div>
               <div className="hidden navbar-center lg:flex ">
           {navLinks.map((item) => (
