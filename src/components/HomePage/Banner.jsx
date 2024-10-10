@@ -1,33 +1,83 @@
 const Banner = () => {
   return (
-    <div>
-      <div className="relative flex items-center justify-center bg-[#FFF]">
-        {/* Background Image */}
-        <div
-          className="absolute top-0 right-32 w-[873px] h-[476px] bg-cover bg-no-repeat bg-[#d3d3d3] flex-shrink-0"
-          style={{ backgroundImage: "url('/assets/images/banner.png')" }}
-        ></div>
-
-        {/* Content */}
-        <div className="relative right-[440px] space-x-8 mt-20">
-          {/* Text Section */}
-          <div className="w-[400px]  p-10 bg-white shadow-lg bg-opacity-90">
-            <h1 className="text-4xl font-bold text-[#6C6C6C] font-notoSerifJP tracking-[-1.47px] ">
-              <span className="text-primary">Franchise</span> Growth <br /> and
-              Support Services
-            </h1>
-            <p className="mt-4 font-baiJamjuree text-[#5F5F64]">
-              Franchise Growth and Support Services provides comprehensive
-              assistance for aspiring and established franchise owners.
-            </p>
-            <button className="px-6 py-2 mt-6 text-white rounded-lg shadow-md bg-primary hover:bg-primary">
-              Book Your Free 1 Consultation
-            </button>
+    <div className="container mx-auto text-white">
+      <div className="w-full mt-6 carousel">
+        {banners.map((banner, index) => (
+          <div
+            style={{
+              backgroundImage: `linear-gradient(45deg,rgba(7,25,82,0.7), rgba(0,0,0,0.3)), url(/assets/images/banner/${index + 1
+                }.jpg)`,
+            }}
+            key={index}
+            id={`slide${index + 1}`}
+            className="relative w-full bg-top bg-no-repeat bg-cover carousel-item h-[600px] rounded-lg"
+          >
+            <div className="flex items-center w-full h-full pl-36">
+              <div className="space-y-6">
+                <h1 className="text-5xl font-bold">{banner.title}</h1>
+                <p>{banner.description}</p>
+                <button className="mr-4 btn btn-primary">Discover More</button>
+                <button className="text-white btn btn-outline">Latest Project</button>
+              </div>
+            </div>
+            <div className="absolute flex justify-between bottom-12 right-12">
+              <a href={banner.prev} className="mr-5 btn btn-circle hover:bg-primary hover:text-white">
+                ❮
+              </a>
+              <a href={banner.next} className="btn btn-circle hover:bg-primary hover:text-white">
+                ❯
+              </a>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
+
+const banners = [
+  {
+    title: "Affordable Price For Car Servicing",
+    description:
+      "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    next: "#slide2",
+    prev: "#slide6",
+  },
+  {
+    title: "Affordable Price For Car Servicing",
+    description:
+      "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    next: "#slide3",
+    prev: "#slide1",
+  },
+  {
+    title: "Affordable Price For Car Servicing",
+    description:
+      "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    next: "#slide4",
+    prev: "#slide2",
+  },
+  {
+    title: "Affordable Price For Car Servicing",
+    description:
+      "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    next: "#slide5",
+    prev: "#slide3",
+  },
+  {
+    title: "Affordable Price For Car Servicing",
+    description:
+      "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    next: "#slide6",
+    prev: "#slide4",
+  },
+  {
+    title: "Affordable Price For Car Servicing",
+    description:
+      "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    next: "#slide1",
+    prev: "#slide5",
+  },
+];
 
 export default Banner;
