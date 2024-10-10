@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Companies=()=>{
     return(
-        <div className="py-8 mt-28 text-center bg-[#F4F6F6] p-5 p-x-240.28 p-b-55.016 p-x-240">
+        <div className="py-8 -mt-[140px] text-center bg-[#F4F6F6] p-5 p-x-240.28 p-b-55.016 p-x-240">
             <h2 className="text-xl font-baiJamjuree text-primary tracking-[2.8px]">Trusted by Over 1K+ Companies</h2>
             <div className="flex justify-center mt-6 space-x-24 ">
                 <Image src="/assets/companies/Microsoft.svg" alt="Microsoft Logo" width={116.377} height={24.993} className="fill-gray-500" />

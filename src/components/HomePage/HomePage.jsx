@@ -8,17 +8,17 @@ import FaqSection from "./FaqSection";
 import MessageSec from "./MessageSec";
 import Testimony from "./Testimony";
 import SubscribeSection from "./SubscribeSection";
-import Swiper from "./Swiper";
-import Banner from "./Banner";
-import Swipper2 from "./Swipper2";
+
+
+import Swiper2 from "./Swiper2";
+
 
 
 const HomePage = () => {
   return (
     <div>
-      <Banner />
-      <Swiper />
-     <Swipper2 />
+      
+    <Swiper2 />
       <Companies />
       <Schedule />
       <VisionarySec />

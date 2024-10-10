@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-import "swiper/css";
 import Navbar from "@/components/shared/Navbar";
 
 import{Bai_Jamjuree, Noto_Serif_JP, Poppins, Volkhov} from "next/font/google"
