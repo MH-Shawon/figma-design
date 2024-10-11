@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const Categories = () => {
   return (
-    <div className="mt-8">
+    <div className="mt-[100px]">
       <h5 className="text-center text-[#5E6282] font-poppins font-semibold">
         Category
       </h5>

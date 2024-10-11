@@ -3,7 +3,7 @@ const FaqSection = () => {
   
 
   return (
-      <section className="py-2 bg-[#EFEFEF] h-[420px] rounded-2xl mt-20 container mx-auto mb-2">
+      <section className="py-2 bg-[#EFEFEF] h-[420px] rounded-2xl  container mx-auto mb-2 mt-[140px]">
     <div className='text-center'>
               <h4 className='font-poppins text-[#5E6282] font-semibold'>FAQ</h4>
               <h3 className='font-volkhov font-bold text-[#14183E] text-[50px]'>Frequently Asked Questions</h3>

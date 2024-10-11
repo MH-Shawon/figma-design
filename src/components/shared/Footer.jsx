@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 const Footer=()=>{
     return(
         <div className=''>
-            <footer className=" p-24 footer bg-[#EFEFEF] text-base-content">
+            <footer className=" p-24 footer bg-[#EFEFEF] text-base-content mt-20">
                 <aside className="space-y-4">
                     <a className="text-[26px] font-notoSerifJP text-[#515151]">
                         <span className="text-primary">Franchies</span>Expert

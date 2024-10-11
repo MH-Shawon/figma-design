@@ -1,7 +1,7 @@
 const MessageSec=()=>{
     return(
         <div
-            className="min-h-screen mt-12 hero"
+            className="min-h-screen mt-[75px] hero"
             style={{
                 backgroundImage: "url(/assets/images/telephone.jpeg)",
             }}

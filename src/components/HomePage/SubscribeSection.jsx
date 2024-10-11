@@ -1,13 +1,15 @@
+import Image from "next/image";
+
 const SubscribeSection = () => {
   return (
-    <div className="container mx-auto h-[350px] flex items-center justify-center mt-[74px] mb-[55px]">
+    <div className="container mx-auto h-[350px] flex items-center justify-center  mt-[94px] mb-[55px]">
       <div
         style={{
           width: "1170px",
-          height: "307px",
+          height: "407px",
           borderRadius: " 129px 20px 20px 20px",
         }}
-        className="bg-[#B1B1B1] space-y-10 relative"
+        className="bg-[#B1B1B1] space-y-10  relative "
       >
         <div className="absolute p-3 text-white h-[70px] w-[70px] rounded-full opacity-100 -top-10 right-0">
           <svg
@@ -36,16 +38,37 @@ const SubscribeSection = () => {
             />
           </svg>
         </div>
-        <p className="text-center text-[#5E6282] font-semibold text-[33px] font-poppins px-[150px] mt-[70px]">
+        <div className="absolute p-3 text-white h-[351.521px] w-[264px]  rounded-[0px_24px_0px_50px]  -top-10 -right-3">
+          <div>
+            <Image alt='circle' src='/assets/Group 42.png' width={264} height={251} className="w-full h-full " />
+          </div>
+        </div>
+        <div className="absolute p-3 text-white h-[480.521px] w-[364px]  rounded-[0px_24px_0px_50px]  -bottom-[216px] ">
+          <div>
+            <Image alt='circle' src='/assets/Group 43.png' width={264} height={251} className="w-full h-full " />
+          </div>
+        </div>
+
+        <p className="text-center absolute text-[#5E6282] font-semibold text-[33px] font-poppins px-[150px] top-10">
           Subscribe to get information, latest news and other interesting offers
           about Jadoo
         </p>
-        <form className="flex items-center justify-center w-full">
+        <form className="relative flex items-center justify-center w-full top-52">
+        <div className='relative flex items-center '>
+            <Image
+              src="/assets/Group 46.svg" 
+              alt="Email Icon"
+              width={21} 
+              height={18} 
+              className="absolute ml-3 " 
+            />
+          
           <input
             type="email"
             placeholder="Your email"
-            className="p-3 bg-white text-[#39425D] rounded-lg w-[421px]"
+            className="p-3 bg-white text-[#39425D] rounded-lg w-[421px] pl-11"
           />
+        </div>
           <button
             type="submit"
             className="px-6 py-3 ml-2 text-base font-semibold text-white rounded-lg bg-primary"
