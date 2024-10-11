@@ -57,49 +57,39 @@ const Swiper2 = () => {
                 <div className="absolute p-4 bg-white shadow-md bottom-14 right-[100px]">
                   <div className="flex items-center mb-2 space-x-2">
                     <div className="flex">
-                      <span className="mr-3 text-3xl font-bold text-black">
+                      <span className="mr-2 text-xl font-bold text-black">
                         4.9
                       </span>
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-5 h-5 mt-2 mr-3 fill-current text-primary"
+                          className="w-4 h-4 mt-2 fill-current text-primary"
                         />
                       ))}
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
-                    
-{/* avatar  */}
+                    <div className="flex -space-x-2">
+                      {[...Array(4)].map((_, i) => (
+                        <div
+                          key={i}
+                          className="w-8 h-8 overflow-hidden bg-gray-300 border-2 border-white rounded-full"
+                        >
 
-                    <div className="-space-x-2 avatar-group rtl:space-x-reverse">
-                      <div className="avatar">
-                        <div className="w-10 h-10 border-2 border-white rounded-full">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                          <img
+                            src={`/assets/avatar/Rectangle${i + 1}.svg`}
+                            alt={`User avatar ${i + 1}`}
+                            width={32}
+                            height={32}
+                          />
                         </div>
-                      </div>
-                      <div className="avatar">
-                        <div className="w-10 h-10 border-2 border-white rounded-full">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                        </div>
-                      </div>
-                      <div className="avatar">
-                        <div className="w-10 h-10 border-2 border-white rounded-full">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                        </div>
-                      </div>
-                      <div className="avatar">
-                        <div className="w-10 h-10 border-2 border-white rounded-full">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                        </div>
-                      </div>
-                      <div className="avatar">
-                        <div className="w-10 h-10 border-2 border-white rounded-full">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                        </div>
-                      </div>
-                    </div>                    
+                      ))}
 
+
+                      <div className="flex items-center justify-center w-8 h-8 ml-1 border-2 border-white rounded-full bg-primary">
+                        <p className="text-white">5k</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="absolute p-4 rounded-lg -bottom-6 right-[80px]">
