@@ -17,13 +17,13 @@ const HomePage = () => {
       <Swiper2 />
       <Companies />
       <ScheduleSwiper />
-      <VisionarySec />
+      {/* <VisionarySec />
       <Categories />
       <Explore />
       <Testimony />
       <FaqSection />
       <MessageSec />
-      <SubscribeSection />
+      <SubscribeSection /> */}
     </div>
   );
 };

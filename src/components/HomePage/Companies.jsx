@@ -3,6 +3,7 @@ import CommonLayout from "../layouts/commonLayout";
 
 const Companies = () => {
   return (
+    
       <div className="py-8 text-center bg-[#F4F6F6] p-5">
         <CommonLayout>
         <h2 className="text-xl font-baiJamjuree text-primary tracking-[2.8px] font-semibold">
