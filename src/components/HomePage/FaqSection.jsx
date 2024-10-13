@@ -1,14 +1,17 @@
+import CommonLayout from "../layouts/commonLayout";
 
 const FaqSection = () => {
   
 
   return (
+    <CommonLayout>
+      
     <section className="py-4 bg-[#EFEFEF] h-auto rounded-2xl container mx-auto mb-2 mt-[140px]">
       <div className="text-center">
         <h4 className="font-poppins text-[#5E6282] font-semibold">FAQ</h4>
         <h3 className="font-volkhov font-bold text-[#14183E] text-[36px] md:text-[50px]">Frequently Asked Questions</h3>
       </div>
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center max-w-full p-4 mx-auto gap-x-16 gap-y-5 lg:flex-row lg:justify-between">
           <div className="w-full space-y-4 lg:w-1/2">
             <div tabIndex={0} className="collapse collapse-plus bg-[#FFF] rounded-2xl shadow-md">
@@ -59,6 +62,7 @@ const FaqSection = () => {
         </div>
       </div>
     </section>
+    </CommonLayout>
 
   );
 };

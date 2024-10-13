@@ -1,19 +1,24 @@
 import Image from "next/image";
 import {  FaLinkedinIn } from "react-icons/fa";
+import CommonLayout from "../layouts/commonLayout";
 
 const VisionarySec=()=>{
     return(
-        <div className="h-auto lg:h-[575px] mt-10 lg:mt-24 px-4 lg:px-0">
-            <div className="flex flex-col items-center w-full gap-10 lg:flex-row lg:items-start lg:gap-0 hero-content">
+
+        <CommonLayout>
+
+            
+        <div className="h-auto lg:h-[575px] mt-10 lg:mt-24 sm:mt-12 px-4 lg:px-0">
+            <div className="flex flex-col items-center w-full gap-10 sm:justify-center lg:flex-row lg:items-start lg:gap-0 hero-content">
                 {/* Image Section */}
-                <div className="flex justify-center w-full lg:w-1/3 lg:justify-start">
-                    <div className="relative bg-primary w-[200px] sm:w-[250px] md:w-[300px] lg:w-[339px] h-[350px] sm:h-[400px] md:h-[500px] lg:h-[550px]">
+                <div className="">
+                    <div className="relative bg-primary w-[200px] sm:w-[200px] md:w-[400px]  h-[350px] sm:h-[400px] md:h-[500px] ">
                         <Image
                             src="/assets/images/girl.png"
                             width={442}
                             height={575}
                             alt="visionary"
-                            className="absolute bottom-0 left-0 sm:left-[50px] md:left-[100px] lg:left-[170px] w-[200px] sm:w-[250px] md:w-[350px] lg:w-[442px] h-[350px] sm:h-[400px] md:h-[500px] lg:h-[575px] object-cover"
+                            className="absolute bottom-0 left-0 sm:left-[40px] md:left-[100px]   sm:w-[200px] md:w-[350px]  h-[350px] sm:h-[400px] md:h-[500px]  object-cover"
                         />
                     </div>
                 </div>
@@ -39,5 +44,6 @@ const VisionarySec=()=>{
                 </div>
             </div>
         </div>
+        </CommonLayout>
     )}
 export default VisionarySec;

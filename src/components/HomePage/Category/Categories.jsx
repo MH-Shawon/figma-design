@@ -1,8 +1,12 @@
+import CommonLayout from "@/components/layouts/commonLayout";
 import Card from "./Card";
 
 const Categories = () => {
   return (
-    <div className="mt-10 lg:mt-[100px] px-4 sm:px-8 lg:px-[100px] overflow-hidden ">
+    <CommonLayout>
+
+      
+    <div className="mt-10 container mx-auto lg:mt-[100px]  sm:px-8  overflow-hidden ">
       <h5 className="text-center text-[#5E6282] font-poppins font-semibold text-sm sm:text-base">
         Category
       </h5>
@@ -14,6 +18,7 @@ const Categories = () => {
         <Card />
       </div>
     </div>
+    </CommonLayout>
 
 
   );
