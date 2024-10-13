@@ -1,14 +1,14 @@
 const MessageSec=()=>{
     return(
         <div
-            className="min-h-screen mt-12 hero"
+            className="min-h-screen mt-[75px] hero"
             style={{
                 backgroundImage: "url(/assets/images/telephone.jpeg)",
             }}
         >
             <div className="bg-opacity-10 hero-overlay"></div>
             <div
-                className="text-center w-[680px] hero-content text-neutral-content"
+                className="text-center sm:w-[100%] md:w-[680px] hero-content text-neutral-content"
                 style={{
                     borderRadius: "41px",
                     border: "1px solid #D0D0D0",

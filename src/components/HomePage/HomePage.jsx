@@ -1,5 +1,3 @@
-import Schedule from "./Schedule";
-
 import Companies from "./Companies";
 import VisionarySec from "./VisionarySec";
 import Categories from "./Category/Categories";
@@ -9,18 +7,16 @@ import MessageSec from "./MessageSec";
 import Testimony from "./Testimony";
 import SubscribeSection from "./SubscribeSection";
 
-
 import Swiper2 from "./Swiper2";
 
-
+import ScheduleSwiper from "./ScheduleSwiper";
 
 const HomePage = () => {
   return (
     <div>
-      
-    <Swiper2 />
+      <Swiper2 />
       <Companies />
-      <Schedule />
+      <ScheduleSwiper />
       <VisionarySec />
       <Categories />
       <Explore />

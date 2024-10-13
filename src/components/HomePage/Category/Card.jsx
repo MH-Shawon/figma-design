@@ -1,62 +1,108 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
-const Card=()=>{
-    return(
-        <div className="container flex gap-3 mx-auto mt-5 bg-white">
-            <div className=" card w-96">
-                <figure className="px-10 pt-10">
-                    <Image alt="honesty" src='/assets/category/bro.svg' height={151} width={151} />
-                </figure>
-                <div className="items-center text-center card-body">
-                    <h2 className="text-[#1E1D4C] font-baiJamjuree font-semibold text-[31px]">Honesty</h2>
-                    <p className="font-baiJamjuree text-[#5E6282] text-[21px] leading-[40.341px]">We prioritize authenticity and follow a transparent, non-pushy approach.</p>
-                    <div className="card-actions">
-                        
-                    </div>
-                </div>
-            </div>
-{/* card-2  */}
-            
-            <div className="relative w-[414px] h-[487px]">
-               
-                <div className="absolute bottom-[-20px] left-[-40px] w-[155px] h-[155px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] z-0"></div>
+const Card = () => {
+  const [cardHover, setCardHover] = useState("card1");
+  return (
+    <div className="container flex flex-col gap-10 px-4 mx-auto mt-5 bg-white lg:flex-row sm:px-0 ">
+      {/* card-1 */}
+      <div
+        className="relative w-full sm:w-96 lg:w-1/3 lg:h-[487px]  mx-auto "
+        onMouseEnter={() => setCardHover("card1")}
+        onMouseLeave={() => setCardHover(null)}
+      >
+        {cardHover === "card1" && (
+          <div className="absolute bottom-[-50px] left-[-50px] w-[120px] h-[120px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] z-0 transition-transform duration-300 ease-in-out"></div>
+        )}
 
-                
-                <div className="relative z-10 bg-white rounded-[55px] shadow-lg w-full h-full p-6">
-                    
-                    <div className="flex justify-center pt-6">
-                        <Image
-                            src="/assets/category/rafiki.svg"
-                            alt="Advocacy"
-                            width={151}
-                            height={151}
-                            className="flex-shrink-0"
-                        />
-                    </div>
-
-                    {/* Card Body */}
-                    <div className="mt-6 text-center">
-                        <h2 className="text-[#1E1D4C] font-bold text-[31px]">Advocacy</h2>
-                        <p className="text-[#5E6282] text-[21px] leading-[40px] mt-4">
-                            Our advocacy extends to both individuals seeking franchise
-                            opportunities and franchises looking for the right candidates.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            {/* card-3  */}
-            <div className=" card w-96">
-                <figure className="px-10 pt-10">
-                    <Image alt="honesty" src='/assets/category/amico.svg' height={151} width={151} />
-                </figure>
-                <div className="items-center text-center card-body">
-                    <h2 className="text-[#1E1D4C] font-baiJamjuree font-semibold text-[31px]">Availability</h2>
-                    <p className="font-baiJamjuree text-[#5E6282] text-[21px] leading-[40.341px]">Our unwavering commitment is to always be there when you need us. </p>
-                    
-                </div>
-            </div>
+        <div className="relative z-10 bg-white rounded-[55px] w-full sm:w-[350px] h-full hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
+          <figure className="flex justify-center pt-6">
+            <Image
+              alt="honesty"
+              src="/assets/category/bro.svg"
+              height={151}
+              width={151}
+              className="flex-shrink-0"
+            />
+          </figure>
+          {/* Card Body */}
+          <div className="mt-6 text-center">
+            <h2 className="text-[#1E1D4C] font-baiJamjuree font-semibold text-[31px] hover:text-[#244D4D] transition-colors duration-300">
+              Honesty
+            </h2>
+            <p className="font-baiJamjuree text-[#5E6282] text-[21px] leading-[40.341px] mt-4 hover:text-[#333E59] transition-colors duration-300">
+              We prioritize authenticity and follow a transparent, non-pushy approach.
+            </p>
+          </div>
         </div>
-    )}
+      </div>
+
+      {/* card-2 */}
+      <div
+        className="relative w-full sm:w-96 lg:w-1/3 h-[487px] mx-auto"
+        onMouseEnter={() => setCardHover("card2")}
+        onMouseLeave={() => setCardHover(null)}
+      >
+        {cardHover === "card2" && (
+          <div className="absolute bottom-[-50px] left-[-50px] w-[120px] h-[120px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] z-0 transition-transform duration-300 ease-in-out"></div>
+        )}
+
+        <div className="relative z-10 bg-white rounded-[55px] w-full sm:w-[350px] h-full hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
+          <figure className="flex justify-center pt-6">
+            <Image
+              alt="honesty"
+              src="/assets/category/rafiki.svg"
+              height={151}
+              width={151}
+              className="flex-shrink-0"
+            />
+          </figure>
+          {/* Card Body */}
+          <div className="mt-6 text-center">
+            <h2 className="text-[#1E1D4C] font-baiJamjuree font-semibold text-[31px] hover:text-[#244D4D] transition-colors duration-300">
+              Honesty
+            </h2>
+            <p className="font-baiJamjuree text-[#5E6282] text-[21px] leading-[40.341px] mt-4 hover:text-[#333E59] transition-colors duration-300">
+              We prioritize authenticity and follow a transparent, non-pushy approach.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* card-3 */}
+      <div
+        className="relative w-full sm:w-96 lg:w-1/3 h-[487px] mx-auto"
+        onMouseEnter={() => setCardHover("card3")}
+        onMouseLeave={() => setCardHover(null)}
+      >
+        {cardHover === "card3" && (
+          <div className="absolute bottom-[-50px] left-[-50px] w-[120px] h-[120px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] z-0 transition-transform duration-300 ease-in-out"></div>
+        )}
+
+        <div className="relative z-10 bg-white rounded-[55px] w-full sm:w-[350px] h-full hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
+          <figure className="flex justify-center pt-6">
+            <Image
+              alt="honesty"
+              src="/assets/category/amico.svg"
+              height={151}
+              width={151}
+              className="flex-shrink-0"
+            />
+          </figure>
+          {/* Card Body */}
+          <div className="mt-6 text-center">
+            <h2 className="text-[#1E1D4C] font-baiJamjuree font-semibold text-[31px] hover:text-[#244D4D] transition-colors duration-300">
+              Honesty
+            </h2>
+            <p className="font-baiJamjuree text-[#5E6282] text-[21px] leading-[40.341px] mt-4 hover:text-[#333E59] transition-colors duration-300">
+              We prioritize authenticity and follow a transparent, non-pushy approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  );
+};
 export default Card;

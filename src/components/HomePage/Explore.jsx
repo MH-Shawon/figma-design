@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Explore=()=>{
     return(
-        <div className="relative w-full  h-[550px] bg-[#244D4D] rounded-[0px_0px_248px_0px] flex items-center justify-between p-12">
+        <div className="relative w-full  h-[550px] bg-[#244D4D] rounded-[0px_0px_248px_0px] flex items-center justify-between p-12 mt-[85px]">
            
             <div className="max-w-[50%] text-white">
                 <h1 className="text-[64px] font-bold font-volkhov leading-tight">

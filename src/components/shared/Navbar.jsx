@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-[60px]">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -72,12 +72,14 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="text-[26px] font-notoSerifJP text-[#515151] tracking-[-0.78px] font-bold"><span className="text-primary">Franchies</span>Expert</a>
+          <a className="text-[26px] font-notoSerifJP text-[#515151]  tracking-[-0.78px] font-bold">
+            <span className="text-primary">Franchies</span>Expert
+          </a>
         </div>
-              <div className="hidden navbar-center lg:flex ">
+        <div className="hidden navbar-center lg:flex ">
           {navLinks.map((item) => (
             <Link
-                  className="mr-6 duration-200 hover:text-primary hover:underline text-[#515151] font-baiJamjuree"
+              className="mr-6 duration-200 hover:text-primary hover:underline text-[#515151] font-baiJamjuree"
               key={item.path}
               href={item.path}
             >
@@ -86,7 +88,9 @@ const Navbar = () => {
           ))}
         </div>
         <div className="navbar-end">
-          <button className="text-white btn-primary btn btn-sm">Get Started Today</button>
+          <button className="text-white btn-primary btn btn-sm">
+            Get Started Today
+          </button>
         </div>
       </div>
     </div>
