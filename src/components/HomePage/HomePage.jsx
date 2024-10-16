@@ -4,26 +4,27 @@ import Categories from "./Category/Categories";
 import Explore from "./Explore";
 import FaqSection from "./FaqSection";
 import MessageSec from "./MessageSec";
-import Testimony from "./Testimony";
+import Testimony from "./testimony/Testimony";
 import SubscribeSection from "./SubscribeSection";
 
 import Swiper2 from "./Swiper2";
 
-import ScheduleSwiper from "./ScheduleSwiper";
+import ScheduleSwipe from "./ScheduleSwipe/ScheduleSwipe";
 
 const HomePage = () => {
   return (
     <div>
       <Swiper2 />
       <Companies />
-      <ScheduleSwiper />
-      {/* <VisionarySec />
+
+      <ScheduleSwipe />
+      <VisionarySec />
       <Categories />
       <Explore />
       <Testimony />
       <FaqSection />
       <MessageSec />
-      <SubscribeSection /> */}
+      <SubscribeSection />
     </div>
   );
 };

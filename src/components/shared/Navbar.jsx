@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CommonLayout from "../layouts/commonLayout";
 
 const Navbar = () => {
   const navLinks = [
@@ -29,6 +30,8 @@ const Navbar = () => {
   ];
 
   return (
+    <CommonLayout>
+      
     <div className="container mx-auto mb-[60px]">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
@@ -87,13 +90,14 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="navbar-end">
-          <button className="text-white btn-primary btn btn-sm">
+        <div className="navbar-end ">
+            <button className="hidden text-white btn-primary btn btn-sm sm:block">
             Get Started Today
           </button>
         </div>
       </div>
     </div>
+    </CommonLayout>
   );
 };
 
