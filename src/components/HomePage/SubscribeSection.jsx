@@ -4,13 +4,10 @@ const SubscribeSection = () => {
   return (
     <div className="container mx-auto h-[350px] flex items-center justify-center  mt-[94px] mb-[55px]">
       <div
-        style={{
-          height: "407px",
-          borderRadius: " 129px 20px 20px 20px",
-        }}
-        className="bg-[#B1B1B1] space-y-10 relative lg:w-[90%] w-[100%] "
+        
+        className="bg-[#B1B1B1] space-y-10 relative lg:w-[90%] w-[100%] md:rounded-[129px_20px_20px_20px] rounded-[20px] h-[407px]"
       >
-        <div className="absolute p-3 text-white hidden  h-[70px] w-[70px] rounded-full opacity-100 -top-10 right-0">
+        <div className="absolute p-3 text-white hidden lg:block h-[70px] w-[70px] rounded-full opacity-100 -top-10 right-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -59,11 +56,13 @@ const SubscribeSection = () => {
             />
           </div>
         </div>
+        <div className='md:py-[60px] md:space-y-16 space-y-16'>
 
-        <p className="text-center  text-[#5E6282] font-semibold text-[33px] font-poppins px-[5px] md:px-[150px] z-10 top-10">
+  
+        <h3 className="text-center  text-[#5E6282] font-semibold text-[33px] font-poppins px-[5px] md:px-[150px] z-10 top-10">
           Subscribe to get information, latest news and other interesting offers
           about Jadoo
-        </p>
+        </h3>
         <form className="flex items-center justify-center w-[100%] top-52">
           <div className="z-10 flex items-center w-[63%] md:w-[50%]">
             <Image
@@ -87,6 +86,7 @@ const SubscribeSection = () => {
             Subscribe
           </button>
         </form>
+</div>
       </div>
     </div>
   );
