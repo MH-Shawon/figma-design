@@ -5,11 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 
-
 const Swiper2 = () => {
   return (
     <div className="text-blue-500 ">
-      
       <Swiper
         direction={"vertical"}
         pagination={{
@@ -17,15 +15,15 @@ const Swiper2 = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="h-screen transition-all duration-200 ease-in mySwiper"
+        className="h-[300px] md:h-[500px] transition-all duration-200 ease-in mySwiper"
       >
-        <SwiperSlide className="flex items-center justify-center text-2xl text-white ">
-          <div className="bg-white ">
-            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div className="relative flex flex-col md:flex-row">
+        <SwiperSlide className="flex items-center justify-center text-2xl text-white">
+          <div className="bg-white">
+            <div className="px-4 mx-auto max-w-7xl lg:px-8">
+              <div className="relative flex flex-col -mt-6 md:mt-4 md:flex-row">
                 {/* Background Image */}
                 <div
-                  className="absolute inset-0 bg-center bg-no-repeat bg-cover -0 bg-lightgray left-[260px]"
+                  className="absolute hidden lg:block inset-0 bg-center bg-no-repeat bg-cover -0 bg-lightgray left-[260px]"
                   style={{
                     backgroundImage: "url('/assets/images/1.png')",
                     backgroundPosition: "right",
@@ -37,24 +35,24 @@ const Swiper2 = () => {
                 ></div>
 
                 {/* Content Overlay */}
-                              <div className="relative  w-[370px] h-[320px]  bg-white bg-opacity-90 backdrop-blur-[7.5px] font-notoSerifJP font-bold tracking-[-1.47px] space-y-5 mt-12">
+                <div className="relative md:w-[370px] h-[320px] bg-white bg-opacity-90 backdrop-blur-[7.5px] font-notoSerifJP font-bold tracking-[-1.47px] space-y-5 mt-12">
                   <h1 className="mb-4 font-serif text-4xl md:text-5xl">
                     <span className="text-primary">Franchise</span>{" "}
-                                      <span className="text-[#6C6C6C]">
+                    <span className="text-[#6C6C6C]">
                       Growth and Support Services
                     </span>
                   </h1>
-                  <p className="text-[#5F5F64] text-sm tracking-[0.2px] font-baiJamjuree">
+                  <p className="text-[#5F5F64] text-sm tracking-[0.2px]  font-baiJamjuree">
                     Franchise Growth and Support Services provides comprehensive
                     assistance for aspiring and established franchise owners.
                   </p>
-                                  <button className="flex w-[268px] h-[50px] px-[20px] py-[10px] justify-center text-base items-center flex-shrink-0 rounded-md bg-primary text-white font-baiJamjuree tracking-[-0.32px] ">
+                  <button className="flex md:w-[268px] w-[100%] h-[50px] px-[20px] py-[10px] justify-center text-base items-center flex-shrink-0 rounded-md bg-primary text-white font-baiJamjuree  tracking-[-0.32px]">
                     Book Your Free $1 Consultation
                   </button>
                 </div>
 
                 {/* Rating Overlay */}
-                <div className="absolute p-4 bg-white shadow-md bottom-14 right-[100px]">
+                <div className="absolute p-4 bg-white hidden lg:block shadow-md bottom-14 right-[100px]">
                   <div className="flex items-center mb-2 space-x-2">
                     <div className="flex">
                       <span className="mr-2 text-xl font-bold text-black">
@@ -75,7 +73,6 @@ const Swiper2 = () => {
                           key={i}
                           className="w-8 h-8 overflow-hidden bg-gray-300 border-2 border-white rounded-full"
                         >
-
                           <img
                             src={`/assets/avatar/Rectangle${i + 1}.svg`}
                             alt={`User avatar ${i + 1}`}
@@ -84,22 +81,20 @@ const Swiper2 = () => {
                           />
                         </div>
                       ))}
-
-
                       <div className="flex items-center justify-center w-8 h-8 ml-1 border-2 border-white rounded-full bg-primary">
                         <p className="text-white">5k</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="absolute p-4 rounded-lg -bottom-6 right-[80px]">
+                <div className="absolute p-4 rounded-lg hidden lg:block -bottom-6 right-[80px]">
                   <div className="flex items-center space-x-2">
                     <span className="text-xl font-notoSerifJP text-[#717171] font-bold">
                       Expand, Diversify, and Safeguard Your Portfolio
                     </span>
                   </div>
                 </div>
-                <div className="absolute p-4 -bottom-24 -right-20 ">
+                <div className="absolute hidden p-4 -bottom-24 lg:block -right-20">
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +109,8 @@ const Swiper2 = () => {
                       <path
                         d="M62 48V76.5M62 76.5L72 66.5M62 76.5L52 66.5"
                         stroke="white"
-                        stroke-width="3"
-                        stroke-linecap="round"
+                        strokeWidth="3"
+                        strokeLinecap="round"
                       />
                       <defs>
                         <filter
@@ -125,10 +120,10 @@ const Swiper2 = () => {
                           width="224"
                           height="224"
                           filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
+                          colorInterpolationFilters="sRGB"
                         >
                           <feFlood
-                            flood-opacity="0"
+                            floodOpacity="0"
                             result="BackgroundImageFix"
                           />
                           <feGaussianBlur
@@ -152,21 +147,19 @@ const Swiper2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-6 text-black ">
+              <div className="py-6 text-black">
                 <div className=""></div>
               </div>
             </div>
-
-            
           </div>
         </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center text-2xl text-white ">
-          <div className="bg-white ">
+        <SwiperSlide className="flex items-center justify-center text-2xl text-white">
+          <div className="bg-white">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="relative flex flex-col md:flex-row">
                 {/* Background Image */}
                 <div
-                  className="absolute inset-0 bg-center bg-no-repeat bg-cover -0 bg-lightgray left-[260px]"
+                  className="absolute hidden lg:block inset-0 bg-center bg-no-repeat bg-cover -0 bg-lightgray left-[260px]"
                   style={{
                     backgroundImage: "url('/assets/images/1.png')",
                     backgroundPosition: "right",
@@ -178,10 +171,10 @@ const Swiper2 = () => {
                 ></div>
 
                 {/* Content Overlay */}
-                              <div className="relative  w-[370px] h-[320px]  bg-white bg-opacity-90 backdrop-blur-[7.5px] font-notoSerifJP font-bold tracking-[-1.47px] space-y-5 mt-12">
+                <div className="relative w-[370px] h-[320px] bg-white bg-opacity-90 backdrop-blur-[7.5px] font-notoSerifJP font-bold tracking-[-1.47px] space-y-5 mt-12">
                   <h1 className="mb-4 font-serif text-4xl md:text-5xl">
                     <span className="text-primary">Franchise</span>{" "}
-                                      <span className="text-[#6C6C6C]">
+                    <span className="text-[#6C6C6C]">
                       Growth and Support Services
                     </span>
                   </h1>
@@ -189,13 +182,13 @@ const Swiper2 = () => {
                     Franchise Growth and Support Services provides comprehensive
                     assistance for aspiring and established franchise owners.
                   </p>
-                                  <button className="flex w-[268px] h-[50px] px-[20px] py-[10px] justify-center text-base items-center flex-shrink-0 rounded-md bg-primary text-white font-baiJamjuree tracking-[-0.32px] ">
+                  <button className="flex md:w-[268px] w-[90%] h-[50px] px-[20px] py-[10px] justify-center text-base items-center flex-shrink-0 rounded-md bg-primary text-white font-baiJamjuree tracking-[-0.32px]">
                     Book Your Free $1 Consultation
                   </button>
                 </div>
 
                 {/* Rating Overlay */}
-                <div className="absolute p-4 bg-white shadow-md bottom-14 right-[100px]">
+                <div className="absolute p-4 bg-white hidden lg:block shadow-md bottom-14 right-[100px]">
                   <div className="flex items-center mb-2 space-x-2">
                     <div className="flex">
                       <span className="mr-2 text-xl font-bold text-black">
@@ -216,31 +209,28 @@ const Swiper2 = () => {
                           key={i}
                           className="w-8 h-8 overflow-hidden bg-gray-300 border-2 border-white rounded-full"
                         >
-                          
                           <img
-                            src={`/assets/avatar/Rectangle${i + 1}.svg`} 
+                            src={`/assets/avatar/Rectangle${i + 1}.svg`}
                             alt={`User avatar ${i + 1}`}
                             width={32}
                             height={32}
                           />
                         </div>
                       ))}
-
-                     
                       <div className="flex items-center justify-center w-8 h-8 ml-1 border-2 border-white rounded-full bg-primary">
                         <p className="text-white">5k</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="absolute p-4 rounded-lg -bottom-6 right-[80px]">
+                <div className="absolute p-4 rounded-lg hidden lg:block -bottom-6 right-[80px]">
                   <div className="flex items-center space-x-2">
                     <span className="text-xl font-notoSerifJP text-[#717171] font-bold">
                       Expand, Diversify, and Safeguard Your Portfolio
                     </span>
                   </div>
                 </div>
-                <div className="absolute p-4 -bottom-24 -right-20 ">
+                <div className="absolute hidden p-4 -bottom-24 lg:block -right-20">
                   <div className="flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -255,8 +245,8 @@ const Swiper2 = () => {
                       <path
                         d="M62 48V76.5M62 76.5L72 66.5M62 76.5L52 66.5"
                         stroke="white"
-                        stroke-width="3"
-                        stroke-linecap="round"
+                        strokeWidth="3"
+                        strokeLinecap="round"
                       />
                       <defs>
                         <filter
@@ -266,10 +256,10 @@ const Swiper2 = () => {
                           width="224"
                           height="224"
                           filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
+                          colorInterpolationFilters="sRGB"
                         >
                           <feFlood
-                            flood-opacity="0"
+                            floodOpacity="0"
                             result="BackgroundImageFix"
                           />
                           <feGaussianBlur
@@ -293,18 +283,14 @@ const Swiper2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-6 text-black ">
+              <div className="py-6 text-black">
                 <div className=""></div>
               </div>
             </div>
-
-            
           </div>
         </SwiperSlide>
         
         
-        
-       
       </Swiper>
     </div>
   );

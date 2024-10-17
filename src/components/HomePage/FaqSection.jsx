@@ -6,7 +6,7 @@ const FaqSection = () => {
   return (
     <CommonLayout>
       
-    <section className="py-4 bg-[#EFEFEF] h-auto rounded-2xl container mx-auto mb-2 mt-[140px]">
+    <section className="py-4 bg-[#EFEFEF]  rounded-2xl container mx-auto mb-2 mt-12">
       <div className="text-center">
         <h4 className="font-poppins text-[#5E6282] font-semibold">FAQ</h4>
         <h3 className="font-volkhov font-bold text-[#14183E] text-[36px] md:text-[50px]">Frequently Asked Questions</h3>

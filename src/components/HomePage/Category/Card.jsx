@@ -16,7 +16,7 @@ const Card = () => {
           <div className="absolute  bottom-5 md:bottom-5 md:left-[-30px] left-[10px] w-[80px] md:w-[120px] md:h-[120px] h-[120px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] transition-transform duration-300 ease-in-out"></div>
         )}
 
-        <div className="relative z-10 bg-white rounded-[55px] w-[80%] mx-auto h-[420px] hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
+        <div className="relative z-10 bg-white rounded-[55px] w-[80%] mx-auto h-[435px] hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
           <figure className="flex justify-center pt-6">
             <Image
               alt="honesty"
@@ -49,7 +49,7 @@ const Card = () => {
           <div className="absolute  bottom-5 md:bottom-5 md:left-[-30px] left-[10px] w-[80px] md:w-[120px] md:h-[120px] h-[120px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] transition-transform duration-300 ease-in-out"></div>
         )}
 
-        <div className="relative z-10 bg-white rounded-[55px] w-[80%] mx-auto h-[420px] hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
+        <div className="relative z-10 bg-white rounded-[55px] w-[80%] mx-auto h-[435px] hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
           <figure className="flex justify-center pt-6">
             <Image
               alt="honesty"
@@ -82,7 +82,7 @@ const Card = () => {
           <div className="absolute  bottom-5 md:bottom-5 md:left-[-30px] left-[10px] w-[80px] md:w-[120px] md:h-[120px] h-[120px] bg-[#244D4D] rounded-[46.548px_0px_15.516px_0px] transition-transform duration-300 ease-in-out"></div>
         )}
 
-        <div className="relative z-10 bg-white rounded-[55px] w-[80%] mx-auto h-[420px] hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
+        <div className="relative z-10 bg-white rounded-[55px] w-[80%] mx-auto h-[435px] hover:shadow-xl p-6 transition-transform transform duration-300 ease-in-out hover:scale-105">
           <figure className="flex justify-center pt-6">
             <Image
               alt="honesty"
