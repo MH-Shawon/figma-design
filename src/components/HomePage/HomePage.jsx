@@ -16,7 +16,6 @@ const HomePage = () => {
     <div>
       <Swiper2 />
       <Companies />
-
       <ScheduleSwipe />
       <VisionarySec />
       <Categories />
